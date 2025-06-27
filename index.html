@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe-Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="hero-wrapper">
+         <header>
+        <a href="#"> <h1 class="logo">RECIPES</h1></a>
+        <nav>
+            <a href="">Home</a>
+            <a href="#about">About</a>
+            <a href="#grid">Recipes</a>
+            <a href="#feedback">Feedback</a>
+            <a href="lesson 20 animated  login form css&html/index.html">Login</a>
+            <a href="#" class="btn">Register</a>
+        </nav>
+    </header>
+     <!-- HERO SECTION STARTS HERE  -->
+      <section class="hero">
+        <h1>Welcome to the Recipe-Finder</h1>
+        <p> Discover a world of culinary delights with our extensive collection of recipes. Whether you're a seasoned chef or a home cook, we have something for everyone.</p>
+        <p>Search delicious meals and get inspired</p>
+        <form action="#" class="search-form">
+            <input type="text" placeholder="Search for recipes...">
+            <button type="submit">Search</button>
+        </form>
+        <p class="tags">Popular: <span>#Africa</span> <span> #Asia </span> <span>#Europe</span></p>
+      </section>
+      </div>
+
+    <!-- HERO SECTION ENDS HERE  -->
+
+     <!-- Sort + Pagination  -->
+      <div class="controls">
+        <span>50 Recipes</span>
+        <div class="sort">
+            <label for="sort">Sort by:</label>
+            <select name="sort" id="sort">
+                <option value="latest">Latest</option>
+                <option value="popular">Most Popular</option>
+                <option value="rating">Highest Rated</option>
+                <option value="alphabetical">Alphabetical</option>
+                <option value="time">Time</option>
+            </select>
+      </div>
+      </div>
+    <!-- Sort + Pagination Ends Here -->
+
+
+ <div class="continent-filters">
+    <button data-continent="All" class="active">All</button>
+    <button data-continent="Africa">Africa</button>
+    <button data-continent="Asia">Asia</button>
+    <button data-continent="Europe">Europe</button>
+  </div>
+
+    <section class="grid" id="recipe-grid">
+    <!-- Cards will be dynamically injected here -->
+  </section>
+   
+    <!-- Recipe Details Modal (Generated Dynamically) -->
+<div id="modal-root"></div>
+  
+
+  <!-- 🔶 ABOUT SECTION -->
+<section id="about" class="info-section">
+  <div class="container">
+    <h2>🌍 About This Recipe Finder</h2>
+    <p>
+      Welcome to <strong>World Tastes</strong> – your gateway to discovering mouth-watering recipes from
+      <span class="highlight">Africa, Asia, and Europe</span>. <br />
+      Whether you’re exploring <em>Nigerian classics</em> like Jollof Rice, or trying your hand at exotic Thai or French cuisine,
+      we help you find, save, and enjoy meals you'll love.
+    </p>
+  </div>
+</section>
+
+<!-- 💬 FEEDBACK SECTION -->
+<section id="feedback" class="info-section feedback-section">
+  <div class="container">
+    <h2>💬 We’d Love Your Feedback</h2>
+    <form id="feedback-form" autocomplete="off">
+      <input type="text" placeholder="Your name" required />
+      <input type="email" placeholder="Your email" required />
+      <textarea placeholder="Tell us what you think..." rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="feedback-message" class="hidden">✅ Thank you for your feedback!</p>
+  </div>
+</section>
+
+   
+
+  <footer>
+    <p>&copy; 2025 Recipe Finder. All rights reserved.</p>
+    <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+    </div>
+  </footer>
+    <!-- <div class="loader" id="loader">
+        <i class="fas fa-spinner fa-spin"></i>
+    </div> -->
+
+ <script src="script.js"></script>
+</body>
+</html>
